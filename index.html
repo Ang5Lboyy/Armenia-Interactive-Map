@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armenia Interactive Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="🔍 Search for a region... (Aragatsotn, Yerevan, etc.)" autocomplete="off">
+        <button id="searchBtn">Search</button>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <div class="controls">
+        <button data-type="population">👥 Population</button>
+        <button data-type="schools">🏫 Schools</button>
+        <button data-type="tumo">🎮 TUMO</button>
+        <button data-type="streets">🛣️ Streets</button>
+        <button data-type="sea_level">⛰️ Sea Level</button>
+        <button data-type="villages">🏘️ Villages</button>
+        <button data-type="rivers">💧 Rivers</button>
+        <button data-type="sizes">📐 Sizes</button>
+        <button data-type="banks">🏦 Banks</button>
+        <button data-type="tourism">🏛️ Tourism</button>
+        <button data-type="hospitals">🏥 Hospitals</button>
+        <button data-type="universities">🎓 Universities</button>
+        <button data-type="air_quality">🌫️ Air Quality</button>
+        <button data-type="historical_monuments">🏛️ Monuments</button>
+        <button data-type="wineries">🍷 Wineries</button>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
